@@ -1,0 +1,38 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+Using the diff command within the terminal was made searching for files much easier than before. It definitely demonstrates the potential of command line tools for code editing.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+Monitoring the progress of projects are always worthwhile in the long run. Even when it comes to programming projects, the reward comes through from the journey, not necessarily 
+the destination. An efficient programmer looks back on any of his previous work and uses it to build up a newer, stronger foundation of another project. Any of these worthwhile
+tools can exist at any point in time during the project, so having easy access to all previous work assists this.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+
+The pros of manually committing declare an objective or end for the programmer to meet as he is making edits to the project. It is much easier to mark your progress to your final 
+goal in the project if you have to decide when to create a new item each time. The cons of this mean that the sizes or consistencies of commits are not regulated. It is likely
+that two versions will differ from commit sizes; an appended feature, for example, is a larger commit than fixing a typo.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+Google Docs does not necessarily have a repository, or directory which manages multiple files for a single project. Each file within Google Docs is independently associated, so 
+it is not possible to "commit" to several files at once. It is simply not how the system was set up in Google Docs, but it rather acts as an online office desk similar to the
+traditional Windows office computer. With Git allowing saving multiple files, it gives some diversity to project management because it manages all files associated with each 
+other.
+
+How can you use the commands git log and git diff to view the history of files?
+
+Use git log in order to view the list of commits within the respository. When using git diff, find two commit id's, and insert them as the last parameter of the command.
+Use git diff to find the total number of edits between the two commits as well as detailed lines which were changed.
+
+How might using version control make you more confident to make changes that could break something?
+
+Using version control to find bugs or refer back to older versions made me much more confident because I was sure that something I had properly used successfully already existed
+and fixing game-breaking changes were much more doable. Version control is a much more organized archiving technique which ensures that the workspace is full of tools worthy of 
+completing newer projects.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+I'm going to use Git for any huge projects or projects I plan to work on over a long period of time.
+Use git clone to make a copy of an entire repository, including the history.

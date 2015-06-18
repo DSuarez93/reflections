@@ -1,0 +1,4 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+Running git init under a directory creates a new hidden folder titled ".git". This allows git bash to work properly under the directory. Without initalization, the git commands
+like log, checkout and diff will not work.
