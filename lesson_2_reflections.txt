@@ -14,3 +14,8 @@ The staging area organizes all files which have been edited and separates them f
 overwhelming number of files because it separates the updated changes prior to the commit. Any time when I want to work on another part of the project, I can check the status in
 git, commit the changes (thus cleaning up the staging area), and then I can start working on another task which uses different files. This ensures that only one logical change is
 associated for each commit, even if the change requires multiple files.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Branches are helpful when the project needs to make changes which do not reflect the true status of an updated project, but if they are unofficial attempts or ideas to be
+introduced at a later time. Branches help keep history organized by illustrating the parent node whose code is responsible for the foundation of any of its children down the line.
