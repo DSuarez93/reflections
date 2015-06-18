@@ -2,3 +2,8 @@ What happens when you initialize a repository? Why do you need to do it?
 
 Running git init under a directory creates a new hidden folder titled ".git". This allows git bash to work properly under the directory. Without initalization, the git commands
 like log, checkout and diff will not work.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+The staging area is the temporary intermediate step of creating a commit from the working directory to the git repository. It has no real value without potential files to be
+considered added to the next commit.
