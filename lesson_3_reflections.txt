@@ -27,3 +27,10 @@ How would you collaborate without using Git or Github? What would be easier, and
 I cannot imagine any more trying to collaborate without using Git or Github. The only other tool I can think of is Google Drive, the online program with which everyone works on
 the same document simultaneously. It does not keep track of history changes, so it is not possible to recall a prior state in order to make any changes without accounting for
 any features introduced later.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+Changes in a separate branch would need to be made at a point when it is necessary to make either a revision or a test simulation of a feature. This allows you to focus your
+changes on the updated version of your local master branch. Once everything is stable, it is then considered to pull in changes from others into your local master branch, and then
+merge the master branch into your different branch. The practice in maintaining only your changes into master before pulling in any other changes ensures that there will not be
+conflicts down the road caused by a misunderstanding in what the master branch needs to contain.
