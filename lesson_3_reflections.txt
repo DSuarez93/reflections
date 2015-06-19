@@ -1,0 +1,5 @@
+When would you want to use a remote repository rather than keeping all your work local?
+
+Two reasons I would consider using a remote repository rather than local work would be collaborative work and local memory.
+Remote repositories on Github allow anyone I want to simply clone the repository and edit alongside me, and they also use
+memory space to archive the history of projects which may not be needed locally.
