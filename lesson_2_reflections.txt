@@ -19,3 +19,9 @@ What are some situations when branches would be helpful in keeping your history 
 
 Branches are helpful when the project needs to make changes which do not reflect the true status of an updated project, but if they are unofficial attempts or ideas to be
 introduced at a later time. Branches help keep history organized by illustrating the parent node whose code is responsible for the foundation of any of its children down the line.
+
+How do the diagrams help you visualize the branch structure?
+
+The diagrams shown in Udacity illustrate the project history consisting of commits, either on the master branch or on several other branches. A visual aid like this allows me to
+understand how each commit is related to its parent. An aid like this may be useful for a practical project consisting of several branches in order to ensure that the final output
+will be updated with all necessary and functional commits.
