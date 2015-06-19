@@ -25,3 +25,9 @@ How do the diagrams help you visualize the branch structure?
 The diagrams shown in Udacity illustrate the project history consisting of commits, either on the master branch or on several other branches. A visual aid like this allows me to
 understand how each commit is related to its parent. An aid like this may be useful for a practical project consisting of several branches in order to ensure that the final output
 will be updated with all necessary and functional commits.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Merging two branches together appends the latest changes of all files in the same project but on different branches. Anything present in both remains the same, and any independent
+changes made on either one will be included within a revised branch of one of the two, containing all the past commits within those two branches. We represent it in --graph
+--oneline to simplify the order of commits with respect to the previous branches.
