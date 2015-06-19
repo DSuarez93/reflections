@@ -21,3 +21,9 @@ What is the benefit of having a copy of the last known state of the remote store
 A local copy of the last known state of the remote lets us know how much progress has been completed prior to the time a computer has been disconnected or has continued progress
 once leaving the network. A recorded instance of this assures that there was a point in time where any other changes made by another user are in common with the local updated copy
 of another's work.
+
+How would you collaborate without using Git or Github? What would be easier, and what would be harder?
+
+I cannot imagine any more trying to collaborate without using Git or Github. The only other tool I can think of is Google Drive, the online program with which everyone works on
+the same document simultaneously. It does not keep track of history changes, so it is not possible to recall a prior state in order to make any changes without accounting for
+any features introduced later.
