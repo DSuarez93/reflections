@@ -31,3 +31,9 @@ What is the result of merging two branches together? Why do we represent it in t
 Merging two branches together appends the latest changes of all files in the same project but on different branches. Anything present in both remains the same, and any independent
 changes made on either one will be included within a revised branch of one of the two, containing all the past commits within those two branches. We represent it in --graph
 --oneline to simplify the order of commits with respect to the previous branches.
+
+What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+
+Automatic merges considers simple additions or modifications to code depending on the original, assuming that both have not made completely different changes on the same lines.
+The automatic merges also consider the spacing of code so that it is less likely to run into bugs caused by merging. However, in the event that multiple authors modify the same
+code, automatic merging will not work because there is no way to decipher the scenario and decide the best modification to keep, or if there needs to be a new modification. 
