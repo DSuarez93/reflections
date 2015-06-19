@@ -10,3 +10,8 @@ Pulling changes manually creates a rhythm or pattern of consistent work and keep
 be aware of the status, even when you are not, and it holds Git responsible if it cannot update due to a connection problem or repository conflict. After all, all push and pull
 commands are timestamped, so it records when the user, not Github, makes updates or commits to the project. In addition, some features to be implemented do not require the latest
 update but rather a stable version from some point, and manually pulling changes assures that only that version, nothing more, is brought in locally.
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+Forks are used to make clones on Github of repositories of other users, useful for copying projects without changing or modifying existing ones. Clones take repositories from
+either Github or local machines and make a dublicate on the local machine. Branches change the path of commits and modifications within one repository.
