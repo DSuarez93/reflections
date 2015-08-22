@@ -1,0 +1,7 @@
+The Arch Linux partition will be created from a CD-ROM containing the burned image of the .iso.
+
+Before any work needs to be done with Arch Linux, it needs to have working wirless internet access and a properly functioning boot menu. Everything else can be edited later.
+
+As discovered previously, the wi-fi card for the Inspiron 1525 may be outdated, so it needs to be extracted and compiled from an outside source.
+
+List the details here once complete.
