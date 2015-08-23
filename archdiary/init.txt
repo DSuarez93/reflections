@@ -5,3 +5,26 @@ Before any work needs to be done with Arch Linux, it needs to have working wirle
 As discovered previously, the wi-fi card for the Inspiron 1525 may be outdated, so it needs to be extracted and compiled from an outside source.
 
 List the details here once complete.
+
+Use the following to identify the missing firmware for the wi-fi card:
+dmesg | grep firmware
+lspci -k
+http://linuxwireless.sipsolutions.net/en/users/Drivers/b43
+
+Obtain an extraction tool and the driver bundle, and extract them to /lib/firmware
+
+wget http://bues.ch/b43/fwcutter/b43-fwcutter-018.tar.bz2 http://bues.ch/b43/fwcutter/b43-fwcutter-018.tar.bz2.asc
+gpg --verify b43-fwcutter-018.tar.bz2.asc
+* If failed, use the key given on the website:
+tar xjf b43/fwcutter/b43-fwcutter-018.tar.bz2
+cd b43-fwcutter-018
+sudo make install
+
+wget http://www.lwfinger.com/b43-firmware/broadcom-wl-5.100.138.tar.bz2
+tar xjf broadcom-wl-5.100.138.tar.bz2
+sudo b43-fwcutter -w /lib/firmware broadcom-wl-5.100.138/linux/wl_apsta.o
+
+Windows Boot:
+
+Attemped a new entry for Linux into the Windows Boot Loader was created using bcdedit:
+65af86ec-4939-11e5-825c-0023ae0e6c66
