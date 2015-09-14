@@ -11,20 +11,35 @@ dmesg | grep firmware
 lspci -k
 http://linuxwireless.sipsolutions.net/en/users/Drivers/b43
 
-Obtain an extraction tool and the driver bundle, and extract them to /lib/firmware
+Obtain an extraction tool and the driver bundle, and extract them to /lib/firmware. Upon initial installation, pacstrap base, then reboot. Inside the root, pacman base-devel, then proceed with making the fwcutter. Activate netctl-auto and wpa_supplicant in the meantime.
+
 
 wget http://bues.ch/b43/fwcutter/b43-fwcutter-018.tar.bz2 http://bues.ch/b43/fwcutter/b43-fwcutter-018.tar.bz2.asc
 gpg --verify b43-fwcutter-018.tar.bz2.asc
 * If failed, use the key given on the website:
 tar xjf b43/fwcutter/b43-fwcutter-018.tar.bz2
 cd b43-fwcutter-018
+make
 sudo make install
 
+Change directory to the firmware, download the driver and use the fwcutter tool.
 wget http://www.lwfinger.com/b43-firmware/broadcom-wl-5.100.138.tar.bz2
 tar xjf broadcom-wl-5.100.138.tar.bz2
 sudo b43-fwcutter -w /lib/firmware broadcom-wl-5.100.138/linux/wl_apsta.o
+
+The wireless driver has been successfully installed, and it activates on startup, listening to netctl-auto and attempting to connect to active profiles. Use wifi-menu for any new connections.
 
 Windows Boot:
 
 Attemped a new entry for Linux into the Windows Boot Loader was created using bcdedit:
 65af86ec-4939-11e5-825c-0023ae0e6c66
+
+Ended up installing GREP. Turning on laptop boots GREP:
+/dev/sda1 is Windows 10 boot to root partition found on /dev/sda2
+/dev/sda5 is the 2.4G swap space for Linux
+/dev/sda6 is Arch Linux
+
+New questions:
+Bluetooth?
+User Login
+Graphics & Deskspace
