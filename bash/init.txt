@@ -4,7 +4,6 @@ pwd: Shows where you are currently.
 ls: lists all items in the directory
 	-a : includes hidden items
 	-l : lists all items sequentially
-	
 
 mv <target> <destination>: move file or renames (can move multiple)
 rm: removes files
@@ -12,7 +11,7 @@ rm: removes files
 mkdir: make a new directory
 rmdir: remove directory
 wget <http://>: retrieve file from website
-touch <file>: updates time modified
+touch <file>: creates a file, updates time modified if existing
 echo "text" > <destination>: inputs text into a file
 cat <target>: prints file to terminal
 cp <target> <destination>: makes 1:1 copy of file to new place
