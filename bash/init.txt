@@ -1,1 +1,8 @@
 What is the purpose of terminal?
+
+pwd: Shows where you are currently.
+ls: lists all items in the directory
+	-a : includes hidden items
+	-l : lists all items sequentially
+	
+mkdir: make a new directory
