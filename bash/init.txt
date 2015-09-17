@@ -6,3 +6,9 @@ ls: lists all items in the directory
 	-l : lists all items sequentially
 	
 mkdir: make a new directory
+mv <target> <destination>: move file or renames
+wget <http://>: retrieve file from website
+touch <file>: updates time modified
+echo "text" > <destination>: inputs text into a file
+cat <target>: prints file to terminal
+cp <target> <destination>: makes 1:1 copy of file to new place
