@@ -16,3 +16,4 @@ echo "text" > <destination>: inputs text into a file
 cat <target>: prints file to terminal
 cp <target> <destination>: makes 1:1 copy of file to new place
 tree: draws files, directories and children
+sort <target>: sorts files alphabetically
