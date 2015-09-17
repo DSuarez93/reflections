@@ -27,3 +27,9 @@ sed "s/[find][replace]/g": transforms text
 man <program>: displays manual or description of program, if available
 
 * In the home directory (~), edit .bashrc to update variables, settings
+!! <- expands to last command
+
+jobs: indicates running processes
+fg: resumes suspended jobsdate
+date
+
