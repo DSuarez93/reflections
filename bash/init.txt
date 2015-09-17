@@ -13,7 +13,10 @@ rmdir: remove directory
 wget <http://>: retrieve file from website
 touch <file>: creates a file, updates time modified if existing
 echo "text" > <destination>: inputs text into a file
+	-e : interprets code in quotes outside literal text
+	\n : new line
 cat <target>: prints file to terminal
 cp <target> <destination>: makes 1:1 copy of file to new place
 tree: draws files, directories and children
 sort <target>: sorts files alphabetically
+uniq <target>: only displays unique contents in each line of file
