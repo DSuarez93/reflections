@@ -1,4 +1,4 @@
-What is the purpose of terminal?
+What is the purpose of terminal? Because much better file manipulation is possible.
 
 pwd: Shows where you are currently.
 ls: lists all items in the directory
@@ -17,6 +17,13 @@ echo "text" > <destination>: inputs text into a file
 	\n : new line
 cat <target>: prints file to terminal
 cp <target> <destination>: makes 1:1 copy of file to new place
+scp <target> <remote destination>: securely copies files, even to a remove location
 tree: draws files, directories and children
 sort <target>: sorts files alphabetically
 uniq <target>: only displays unique contents in each line of file
+grep <target> <file>:searches entire file for text
+	-i: ignore case
+sed "s/[find][replace]/g": transforms text
+man <program>: displays manual or description of program, if available
+
+* In the home directory (~), edit .bashrc to update variables, settings
