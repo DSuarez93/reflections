@@ -5,10 +5,15 @@ ls: lists all items in the directory
 	-a : includes hidden items
 	-l : lists all items sequentially
 	
+
+mv <target> <destination>: move file or renames (can move multiple)
+rm: removes files
+	-r : remove contents inside folders recursively
 mkdir: make a new directory
-mv <target> <destination>: move file or renames
+rmdir: remove directory
 wget <http://>: retrieve file from website
 touch <file>: updates time modified
 echo "text" > <destination>: inputs text into a file
 cat <target>: prints file to terminal
 cp <target> <destination>: makes 1:1 copy of file to new place
+tree: draws files, directories and children
