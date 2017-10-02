@@ -1,0 +1,74 @@
+Day One - Git Real
+
+Staging and Remotes.
+run "git diff" to see unstaged differences since the last commit.
+If nothing prints, there are no changes.
+run "git diff --staged" to see the difference between staged commits
+run "git reset <name>" to unstage the commit.
+run "git checkout" to remove modifications without a commit
+Forgot something on the commit? "git reset" to move back a stage and put back in the staging process
+"git commit -m <message>
+"git commit --amend" will add to the last commit
+"git reset --soft HEAD^" will undo the commit but save file changes
+"git reset --hard HEAD^" will undo the last commit and all changes
+
+"git remote add <name> <address>"
+"git remote rm <name>" remove repository
+"git push -u <name> <address>" -u makes it so name does not need to be specified in the future
+What is heroku?
+
+To clone a respoitory, find the repository url
+"git clone <url> <name>"
+It downloads the repository, creats a remote origin to this url, and it checks out the initial master branch and sets the head.
+"git branch <name>" will create a new branch from the current head
+"git branch -r" will list all remote branches
+"git checkout <name>" will switch to the branch <name>
+"git checkout master" will switch back to the master branch
+"git merge <branch name>" will merge the changes to current branch
+"git checkout -b <name>" creates and checks out the branch
+
+"git pull " will sync the local repository with the remote, automatically merging any changes
+---- identical to "git merge origin/master"
+A merge conflict will prevent a merge because of changes in the same file
+
+Remote branches are pushed to a remote repository.
+"git push origin <remote name>
+"git remote show origin" will show all remote branches, local branches configured for pull
+"git push origin :<remote name> will delete the remote repository but keep the local.
+If you attempt to delete a local branch with with staged commits, an error will occur.
+"git branch -D <branch name>" will delete the branch without keeping changes
+"git remote prune origin" will celan up stale remote branches 
+
+A tag is areference to a specific commit. (Use for release versions)
+"git tag" will list tags
+"git tag -a" will add a tag
+"git push --tag" will push all tags to the repository
+"git fetch" will update local branch information with remote repository
+
+"git rebase master" will move all changes to master to a temporary area, run all master commits, and runs all commits in the temp one at a time
+
+These are different ways of customizing "git log"
+"git log" will show the recent history of commits
+"git config --global color.ui true" PLEASE.
+"git log --pretty-oneline"
+"git log --pretty=format:" Any string you want & placeholder data   "
+----Run "git log help"
+"git log --online -p"
+"git log --online --stat"
+"git log --online --graph"
+"git diff HEAD~5"
+
+"git blame <filename>" shows all changes for the file, including who did it and when
+".git/info/exclude" anything in this folder will not be committed
+
+"git rm <filename>" will delete and untract files locally
+"git rm --cached <filename>" will untrack files
+
+"git config --global user.name "Name""
+"git config --global user.email "Address""
+"git config --global core.editor <editor name>"
+"git config --global merge.tool <merge tool name>"
+"git config --list"
+"git config --global alias.mylog \"
+"git config --global alias.<tag> <command name>
+
